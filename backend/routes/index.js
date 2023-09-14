@@ -5,7 +5,7 @@ import { authMiddleware } from '../middlewares/auth.middleware.js';
 const router = express.Router();
 
 router.use("/auth", authRouter)
-router.use("/inventory",authMiddleware, inventoryRouter)
+router.use("/inventory", inventoryRouter)
 
 
 
